@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>préproduction - StopTCA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="image/StopTCA-2.png" /></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Tarifs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Rejoindre notre équipe</a></li>
+      </ul>
+    </nav>
+  
+    <div class="nav-buttons">
+      <a href="trouver_praticien.html"><button class="btn-patient">Trouver un praticien</button></a>
+      <button class="btn-neutral">Se connecter</button>
+  
+      <!-- Bouton de traduction Google (personnalisé) -->
+      <div id="google_translate_element" class="translate-widget"></div>
+    </div>
+  </header>
+  
+  <!-- Script Google Translate -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'fr',
+          includedLanguages: 'fr,en,es',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
+  
+  <script type="text/javascript" 
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
+
+  <main>
+
+  <section class="hero">
+    <div class="text-column">
+      <h1>
+        Un trouble du comportement<br />
+        alimentaire se soigne.<br />
+        <span class="highlight">Pas à pas, on avance avec toi.</span>
+      </h1>
+      <p class="intro">
+        Bienvenue chez StopTCA, une plateforme dédiée à la guérison des troubles alimentaires.
+        Notre <strong>équipe pluridisciplinaire</strong> vous offre <strong>un accompagnement personnalisé et coordonné</strong> tout au long de votre parcours.
+      </p>
+      <hr />
+      <p class="ctar">
+        <strong>Vous ne savez pas par où commencer ?</strong>
+        Réservez un appel <strong>gratuit</strong> de 15 minutes avec Céline, fondatrice de StopTCA.
+      </p>
+      <div class="button-container">
+        <button class="btn-large">📅 Réservez mon appel gratuit</button>
+        <img src="image/fleches.png" alt="flèche" class="arrow" />
+      </div>
+    </div>
+    <div class="image-column">
+      <img src="image/illustration principale.png" alt="Illustration accompagnement" />
+      <p class="footer-below-image"><em>ensemble</em> franchissons le pas</p>
+    </div>
+</section>
+<!--QUELQUE CHIFFRE-->
+<section class="stats-section">
+    <div class="stat">
+      <p class="stat-number">5+</p>
+      <p class="stat-label">ans d’expériences</p>
+    </div>
+    <span class="dot">·</span>
+    <div class="stat">
+      <p class="stat-number">2500+</p>
+      <p class="stat-label">personnes accompagnées</p>
+    </div>
+    <span class="dot">·</span>
+    <div class="stat">
+      <p class="stat-number">400+</p>
+      <p class="stat-label">Rendez-vous par mois</p>
+    </div>
+  </section>
+
+    <!--POURQUOI STOPTCA EST UNIQUE-->
+    <section class="accompagnement-section">
+      <div class="text-column">
+        <h2>
+          Un accompagnement santé<br />
+          pensé pour toi.<br />
+          <span class="highlight">Pluridisciplinaire, humain et coordonné.</span>
+        </h2>
+        <p class="intro">
+          Une équipe d'experts réunie pour te proposer un suivi personnalisé et sans rupture. 
+          Chez StopTCA, nous croyons qu’on avance mieux ensemble.
+        </p>
+        <div class="button-container">
+          <button class="btn-large">📞 Réservez un appel gratuit</button>
+          <img src="image/fleches.png" alt="flèche" class="arrow" />
+        </div>
+      </div>
+    
+      <div class="cards-column">
+        <div class="card patient">
+          <img src="https://img.icons8.com/ios-filled/36/groups.png" alt="groupes" class="icon-img" />
+          <div>
+            <h3>Des experts réunis pour vous</h3>
+            <p>Une approche collaborative pour un accompagnement vraiment efficace.</p>
+          </div>
+        </div>
+        <div class="card praticien">
+          <img src="https://img.icons8.com/ios-filled/36/my-computer--v2.png" alt="visite" class="icon-img" />
+          <div>
+            <h3>Un suivi 100 % personnalisé</h3>
+            <p>Nos praticiens vous accompagnent à distance, selon votre rythme.</p>
+          </div>
+        </div>
+        <div class="card fondatrice">
+          <img src="https://img.icons8.com/ios-filled/36/visit.png" alt="connecté" class="icon-img" />
+          <div>
+            <h3>Une santé connectée</h3>
+            <p>Vos professionnels sont toujours informés de votre situation, sans rupture.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+      <!-- COMMENT ÇA MARCHE-->
+      <section class="how-it-works">
+        <div class="how-text">
+          <h2>Comment ça marche ?</h2>
+          <p class="subtitle">3 étapes simples pour commencer</p>
+        </div>
+        <div class="steps">
+          <div class="step patient">
+            <div class="circle">
+              <h3># Étape 1</h3>
+              <p class="title">Besoin d'aide ?<br>Réservez un appel gratuit</p>
+              <p class="desc">On vous oriente vers les bons spécialistes.</p>
+            </div>
+          </div>
+          <div class="step praticien">
+            <div class="circle">
+              <h3># Étape 2</h3>
+              <p class="title">Créez votre parcours personnalisé</p>
+              <p class="desc">Choisissez vos experts parmi nos psychologues, diététiciens, sophrologues…</p>
+            </div>
+          </div>
+          <div class="step fondatrice">
+            <div class="circle">
+              <h3># Étape 3</h3>
+              <p class="title">Commencez votre accompagnement</p>
+              <p class="desc">Nos spécialistes collaborent pour un suivi vraiment efficace.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!---TEMOIGNAGES-->
+      <section class="testimonials-section">
+        <h3 class="subtitle">Témoignages</h3>
+        <h2 class="main-title">Paroles vraies,<br>transformations vécues</h2>
+        <p class="description">Une qualité reconnue : noté 5★ par nos clients</p>
+        <!-- Elfsight Google Reviews | WIDGET -->
+         <script src="https://static.elfsight.com/platform/platform.js" async></script><div class="elfsight-app-7eb4c059-2bf5-4d46-b4ee-ca2a2ff301c3" data-elfsight-app-lazy></div>
+      </section>
+      
+      
+<!--TEMOIGNAGE VIDEO-->      
+<section class="video-testimonial">
+    <h2>"J'ai pu surmonter mes Tcas grâce à StopTCA"</h2>
+  
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/YRgwMYr_AbA"
+        title="Témoignage Florence"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  
+    <p class="caption">Découvrez le témoignage de Florence</p>
+  </section>
+  
+      <!--PRESENTATION FONDATRICE-->
+<section class="founder-section styled-section">
+  <div class="founder-content styled-content">
+    <div class="founder-photo">
+      <img src="image/cilene.png" alt="Céline Casse">
+    </div>
+    <div class="founder-text">
+      <h2><span>Céline</span> CASSE</h2>
+      <p><strong>Mon engagement</strong> à aider les personnes confrontées aux troubles du comportement alimentaire découle de ma propre expérience. <strong>Ayant moi-même souffert</strong> de troubles alimentaires pendant 15 ans, je comprends profondément les montagnes russes émotionnelles et les obstacles rencontrés.</p>
+      <p><strong>Ma lutte personnelle</strong> et mon observation des difficultés vécues par d'autres m'ont inspirée à créer StopTCA, une plateforme dédiée à offrir un accompagnement empathique et expert.</p>
+      <p>Mon engagement envers <strong><em>cette cause vient de mon cœur</em></strong>, et chaque jour, je travaille pour que personne ne se sente seul dans cette bataille. Si vous ou un proche êtes touchés par les TCA, je vous invite à rejoindre notre communauté bienveillante, où vous trouverez des soins personnalisés et un soutien réel.</p>
+
+      <div class="badges">
+        <div class="badges-cards">
+          <div class="badge-card">Patiente Experte</div>
+          <div class="badge-card">Fondatrice</div>
+        </div>
+        
+  </div>
+</section>
+
+     <!--Presentation metier -->
+     <section class="services-section">
+        <h2>Nos Services</h2>
+      
+        <div class="carousel-container">
+          <button class="nav prev" onclick="moveSlide(-1)">‹</button>
+          <div class="carousel-track" id="carousel-track">
+            <!-- Carte 1 -->
+            <div class="card">
+              <img src="image/psycho.jpeg" alt="">
+              <h3>Psycho-somatothérapeute</h3>
+              <p>Une approche corps-esprit pour libérer les tensions...</p>
+              <a href="#">En savoir plus</a>
+            </div>
+      
+            <!-- Carte 2 -->
+            <div class="card">
+              <img src="image/psychologie-min.jpeg" alt="">
+              <h3>Psychologue</h3>
+              <p>Un accompagnement pour comprendre les origines...</p>
+              <a href="#">En savoir plus</a>
+            </div>
+      
+            <!-- Carte 3 -->
+            <div class="card">
+              <img src="image/Coaching-personnel-image-min.jpeg" alt="">
+              <h3>Coaching-Personnel</h3>
+              <p>Un accompagnement motivant...</p>
+              <a href="#">En savoir plus</a>
+            </div>
+      
+            <!-- Carte 4 -->
+            <div class="card">
+              <img src="image/Sophrologie-image-min.jpg" alt="">
+              <h3>Sophrologie</h3>
+              <p>Améliorer les relations familiales...</p>
+              <a href="#">En savoir plus</a>
+            </div>
+      
+            <!-- Carte 5 -->
+            <div class="card">
+              <img src="image/Patient-expart-image-min.jpg" alt="">
+              <h3>Patient expert</h3>
+              <p>Clarifier ses objectifs personnels...</p>
+              <a href="#">En savoir plus</a>
+            </div>
+      
+            <!-- Carte 6 -->
+            <div class="card">
+              <img src="image/Nutritionniste.jpg" alt="">
+              <h3>dietetique-nutriton</h3>
+              <p>Libération des traumas en douceur...</p>
+              <a href="#">En savoir plus</a>
+            </div>
+          </div>
+          <button class="nav next" onclick="moveSlide(1)">›</button>
+        </div>
+      </section>
+    <!--RADAR-->
+    <section class="teleconsultation-section">
+        <div class="content-container">
+          <div class="left">
+            <h2>Vous avez besoin d'aide ?</h2>
+            <p>
+              Nous sommes la première et la seule plateforme de téléconsultation destinée à accompagner les patients souffrant de troubles du comportement alimentaire, et leurs proches.
+            </p>
+            <button class="btn">🔍 Trouver un praticien</button>
+          </div>
+          <div class="right">
+            <img src="image/RADAR.png" alt="Téléconsultation Illustration">
+          </div>
+        </div>
+    </section>
+      <!--APPEL GRATUIT-->
+        <section class="cta">
+                <h3>Reprenez le pouvoir sur votre santé.</h3>
+                <p>2500 personnes nous ont fait confiance pour changer leur vie. Et vous ?</p>
+                <button class="btn">Réserver un appel gratuit</button>
+        </section>
+      <!--ILS PARLENT DE STOPTCA-->
+      <section class="logos-section">
+        <h2>Ils parlent de notre <span class="italic">projet</span></h2>
+        <div class="logos-container">
+          <img src="image/image 6.png" alt="Karmen Pet Hospital">
+          <img src="image/image 9.png" alt="St. Jude Children's Research Hospital">
+          <img src="image/image 10.png" alt="Mayapada Hospital">
+          <img src="image/image 11.png" alt="Ciputra">
+          <img src="image/image 12.png" alt="Siloam Hospitals">
+          <img src="image/Logo_M6_(2020,_fond_clair).svg" alt="Siloam Hospitals">
+        </div>
+      </section>
+   <!-- BLOG -->
+<section class="recent-articles">
+  <h2>Retrouvez nos articles les plus récents</h2>
+
+  <div class="articles-grid">
+    <div class="article-card">
+      <img src="image/Capture d’écran 2025-05-07 à 11.26.42.png" alt="Article 1">
+      <div class="article-content">
+        <span class="date">26 avril 2022</span>
+        <p>4 phrases à ne pas dire à une personne qui souffre de TCA</p>
+        <a href="#">En savoir +</a>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <img src="image/Capture d’écran 2025-05-07 à 11.26.53.png" alt="Article 2">
+      <div class="article-content">
+        <span class="date">16 mai 2022</span>
+        <p>Les féculents, comment ne plus en avoir peur ?</p>
+        <a href="#">En savoir +</a>
+      </div>
+    </div>
+
+  <div class="see-more">
+    <a href="#">Voir les autres articles</a>
+  </div>
+</section>
+
+    <!--NEWSLETTER-->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-left">
+      <h1><span class="brand">STOPTCA</span><br>Car manger ne devrait pas être une <strong>souffrance.</strong></h1>
+    </div>
+    <div class="newsletter-right">
+      <h3>Inscrivez-vous à notre<br>Newsletter</h3>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Saisissez votre email" required>
+        <label class="info-note">
+          <input type="checkbox"> Aucune information ne sera divulguée à tiers
+        </label>
+        <button type="submit">📩 Souscrire</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  </main>
+ 
+
+ <!--FOOTER-->
+  <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Explorez</h3>
+          <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Se connecter</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Aide</h3>
+          <ul>
+            <li><a href="#">Foire aux questions</a></li>
+            <li><a href="#">Nos champs d’actions</a></li>
+            <li><a href="#">Céline, la fondatrice</a></li>
+            <li><a href="#">Rejoindre notre équipe</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Presse</h3>
+          <ul>
+            <li><a href="#">Communiqué de presse</a></li>
+            <li><a href="#">Dossier de presse</a></li>
+            <li><a href="#">Kit média StopTCA</a></li>
+            <li><a href="#">Les entrevues</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Plateforme</h3>
+          <ul>
+            <li><a href="#">Conditions générales d’utilisations</a></li>
+            <li><a href="#">Mentions légales et politique de confidentialité</a></li>
+            <li><a href="#">Espace de préférences des 🍪</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>        
+      
+      <div class="footer-bottom">
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">↑ Haut</button>
+        <div class="social-icons">
+          <a href="#"><img src="image/icons8-facebook-nouveau.svg" alt="Facebook" /></a>
+          <a href="#"><img src="image/icons8-instagram-3.svg" alt="Instagram" /></a>
+          <a href="#"><img src="image/icons8-tiktok-3.svg" alt="TikTok" /></a>
+          <a href="#"><img src="image/icons8-whatsapp.svg" alt="WhatsApp" /></a>
+        </div>
+
+        <p>Tous droits réservés 2024 © StopTCA ensemble franchissons le pas</p>
+      </div>
+  </footer>
+  <a href="#" class="rdv-button" target="_blank">
+    📞 Réservez un appel gratuit
+  </a>
+  <script src="script.js"></script>
+</body>
+</html>
