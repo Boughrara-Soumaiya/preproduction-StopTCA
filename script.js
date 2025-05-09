@@ -49,5 +49,15 @@
     moveSlide(0); // force la première mise à jour
   });
 
+/*=============================MOBILE================== */
+ // Récupère l'élément de menu toggle (l'icône burger)
+const menuToggle = document.querySelector('.menu-toggle');
 
+// Récupère l'élément de menu (nav)
+const nav = document.querySelector('nav');
 
+// Ajoute un événement au clic sur le menu burger
+menuToggle.addEventListener('click', function() {
+  // Ajoute ou enlève la classe 'active' pour afficher/masquer le menu
+  nav.classList.toggle('active');
+});

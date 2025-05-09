@@ -4,104 +4,109 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Montserrat', sans-serif;
+  /* Assure que le body ne déborde pas en largeur */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;   
+  font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
-  }
-  /*HEADER*/
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 60px;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  }
-  
-  .logo img {
-    max-height: 50px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #6EC4D8; /* Couleur fondatrice */
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  nav a::after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0%;
-    background-color: #6EC4D8;
-    transition: width 0.3s ease;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-  }
-  
-  nav a:hover {
-    color: #9ddbe8; /* Hover praticiens : touche chaleureuse */
-  }
-  
-  nav a:hover::after {
-    width: 100%;
-  }
-  
-.nav-buttons {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-buttons button {
-    margin-left: 15px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  /* Bouton pour patients */
-  .btn-patient {
-    background: linear-gradient(to right, #6EC4D8, #9ddbe8);
-    color: white;
-    border: none;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .btn-patient:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
-  }
-  
-  /* Bouton fonction neutre */
-  .btn-neutral {
-    background: transparent;
-    border: 2px solid #9ddbe8;
-    color: #9ddbe8;
-  }
-  
-  .btn-neutral:hover {
-    background-color: #9ddbe8;
-    color: white;
-  }
+}
 
-  /* Traduction : style minimaliste */
+ /* HEADER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6EC4D8;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #6EC4D8;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav a:hover {
+  color: #9ddbe8;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Bouton pour patients */
+.btn-patient {
+  background: linear-gradient(to right, #6EC4D8, #9ddbe8);
+  color: white;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-patient:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Bouton fonction neutre */
+.btn-neutral {
+  background: transparent;
+  border: 2px solid #9ddbe8;
+  color: #9ddbe8;
+}
+
+.btn-neutral:hover {
+  background-color: #9ddbe8;
+  color: white;
+}
+
 .translate-widget {
   margin-left: 15px;
   font-family: 'Montserrat', sans-serif;
@@ -132,7 +137,104 @@
   display: none;
   font-size: 28px;
   cursor: pointer;
+  margin-left: 20px;
 }
+
+/* Responsive Navbar */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .logo img {
+    max-height: 45px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .nav-buttons button {
+    padding: 8px 16px;
+  }
+
+  .translate-widget select {
+    font-size: 12px;
+  }
+}
+
+/* Mobile First (<=768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 30px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .nav-buttons button,
+  .translate-widget {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .nav-buttons button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .logo img {
+    max-height: 35px;
+  }
+
+  .translate-widget select {
+    font-size: 12px;
+  }
+}
+
 
 /* ==========--------------PAGE PRINCIPAL-----------=================*/
 
@@ -219,10 +321,63 @@
 .arrow {
     position: absolute;
     right: -70px;
-    top: -10px; /* ← Flèche bien plus haute */
+    top: -10px; 
     width: 60px;
     transform: rotate(20deg);
   }
+
+/* -------------------------------
+   Responsive
+-------------------------------- */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .text-column,
+  .image-column {
+    width: 100%;
+  }
+
+  .text-column h1 {
+    font-size: 32px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .ctar,
+  .btn-large {
+    font-size: 15px;
+  }
+
+  .arrow {
+    position: static;
+    display: block;
+    margin: 10px auto 0;
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .text-column h1 {
+    font-size: 26px;
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .footer-below-image {
+    font-size: 18px;
+  }
+}
+
+
 /*CHIFFRE*/
   .stats-section {
     background-color: #d9fafa; 
@@ -257,6 +412,7 @@
     opacity: 0.5;
   }
 /*PK STOPTCA EST UNIQUE*/ 
+/* Accompagnement Section */
 .accompagnement-section {
   display: flex;
   justify-content: space-between;
@@ -297,6 +453,7 @@
   gap: 16px;
   align-items: center;
 }
+
 .accompagnement-section .card {
   display: flex;
   align-items: flex-start;
@@ -305,14 +462,14 @@
   background-color: white;
   border-left: 5px solid transparent;
   border-radius: 16px;
-  padding: 24px 20px; /* ← plus de hauteur */
+  padding: 24px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  min-height: 140px; /* ← garantit une hauteur même avec peu de texte */
+  min-height: 140px;
 }
 
 .accompagnement-section.card h3 {
-  font-size: 16px; /* légèrement réhaussé */
+  font-size: 16px;
   margin: 0 0 8px;
   color: #222;
   font-weight: 600;
@@ -323,11 +480,11 @@
   font-size: 13px;
   color: #555;
   margin: 0;
-  line-height: 1.6; /* allonge aussi l’espace vertical */
+  line-height: 1.6;
 }
 
 .accompagnement-section .cards-column {
-  width: 45%; /* ↑ un peu plus large pour accueillir les nouvelles cartes */
+  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -358,7 +515,6 @@
   flex-shrink: 0;
 }
 
-
 /* Bouton & flèche */
 .btn-large {
   background: linear-gradient(to right, #6EC4D8, #9ddbe8);
@@ -384,6 +540,114 @@
   top: -10px;
   width: 60px;
   transform: rotate(20deg);
+}
+
+/* Responsive Design */
+
+/* À partir de 1024px */
+@media (max-width: 1024px) {
+  .accompagnement-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .text-column {
+    width: 100%;
+  }
+
+  .accompagnement-section .cards-column {
+    width: 100%;
+  }
+
+  .accompagnement-section .card {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px 16px;
+  }
+
+  .accompagnement-section .card:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: 12px 24px;
+  }
+}
+
+/* Mobile First (<=768px) */
+@media (max-width: 768px) {
+  .accompagnement-section {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .text-column {
+    width: 100%;
+  }
+
+  .accompagnement-section .cards-column {
+    width: 100%;
+    gap: 25px;
+  }
+
+  .accompagnement-section .card {
+    max-width: 100%;
+    padding: 16px 12px;
+    margin: 0 auto;
+  }
+
+  .accompagnement-section .card h3 {
+    font-size: 14px;
+  }
+
+  .accompagnement-section .card p {
+    font-size: 12px;
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: 14px 24px;
+  }
+
+  .icon-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
+
+/* Mobile (<=576px) */
+@media (max-width: 576px) {
+  .accompagnement-section {
+    padding: 20px 10px;
+  }
+
+  .accompagnement-section .card {
+    max-width: 100%;
+    padding: 14px 10px;
+  }
+
+  .accompagnement-section .card h3 {
+    font-size: 12px;
+  }
+
+  .accompagnement-section .card p {
+    font-size: 11px;
+  }
+
+  .btn-large {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  .button-container .arrow {
+    width: 50px;
+    right: -50px;
+    top: -5px;
+  }
 }
 
   
@@ -889,7 +1153,7 @@
 }
 
 
-/* SECTION RADAR MODERNE */
+/* SECTION RADAR */
 .teleconsultation-section {
   padding: 100px 40px;
   background: #fff;
@@ -926,7 +1190,7 @@
 }
 
 .btn {
-  background-color:  #FCA4A1;
+  background-color: #FCA4A1;
   color: white;
   padding: 14px 28px;
   font-size: 1rem;
@@ -952,6 +1216,88 @@
   height: auto;
   border-radius: 18px;
 }
+
+/* À partir de 1024px */
+@media (max-width: 1024px) {
+  .teleconsultation-section {
+    padding: 80px 30px;
+  }
+
+  .content-container {
+    gap: 40px;
+  }
+
+  .left h2 {
+    font-size: 2rem;
+  }
+
+  .left p {
+    font-size: 0.95rem;
+  }
+
+  .right {
+    max-width: 450px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+  }
+}
+
+/* Mobile First (<=768px) */
+@media (max-width: 768px) {
+  .teleconsultation-section {
+    padding: 60px 20px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .left h2 {
+    font-size: 1.8rem;
+  }
+
+  .left p {
+    font-size: 0.9rem;
+  }
+
+  .right {
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile (<=576px) */
+@media (max-width: 576px) {
+  .teleconsultation-section {
+    padding: 40px 15px;
+  }
+
+  .left h2 {
+    font-size: 1.6rem;
+  }
+
+  .left p {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .right img {
+    border-radius: 12px;
+  }
+}
+
 
 /* SECTION APPEL GRATUIT */
 .cta {
