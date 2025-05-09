@@ -411,8 +411,67 @@ nav a:hover::after {
     color: #1a1a1a;
     opacity: 0.5;
   }
+
+  /* À partir de 1024px */
+@media (max-width: 1024px) {
+  .stats-section {
+    padding: 35px 20px;
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+  }
+
+  .dot {
+    font-size: 28px;
+  }
+}
+
+/* Mobile First (<=768px) */
+@media (max-width: 768px) {
+  .stats-section {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .stat-number {
+    font-size: 24px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  .dot {
+    font-size: 24px;
+  }
+}
+
+/* Mobile (<=576px) */
+@media (max-width: 576px) {
+  .stats-section {
+    padding: 25px 10px;
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 22px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .dot {
+    font-size: 22px;
+  }
+}
 /*PK STOPTCA EST UNIQUE*/ 
-/* Accompagnement Section */
+
 .accompagnement-section {
   display: flex;
   justify-content: space-between;
@@ -542,7 +601,7 @@ nav a:hover::after {
   transform: rotate(20deg);
 }
 
-/* Responsive Design */
+
 
 /* À partir de 1024px */
 @media (max-width: 1024px) {
